@@ -98,7 +98,7 @@ public class AirportRepository {
     }
 
     public String cancelATicket(Integer flightId, Integer passengerId) {
-        if(!flights.containsKey(flightId) || !passengers.containsKey(passengerId) || !filledflights.get(flightId).contains(flightId))
+        if(!flights.containsKey(flightId) || !passengers.containsKey(passengerId) || !filledflights.get(flightId).contains(passengerId))
             return "FAILURE";
         filledflights.get(flightId).remove(passengerId);
         pass_flight.get(passengerId).remove(flightId);
