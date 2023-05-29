@@ -40,7 +40,7 @@ public class AirportRepository {
                 largest = portdb.get(airport).getAirportName();
             }
             else if(max==portdb.get(airport).getNoOfTerminals()){
-                if(largest.compareTo(portdb.get(airport).getAirportName())<0)
+                if(largest.compareTo(portdb.get(airport).getAirportName())>0)
                     largest = portdb.get(airport).getAirportName();
             }
         }
