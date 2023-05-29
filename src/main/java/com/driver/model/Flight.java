@@ -17,7 +17,7 @@ public class Flight {
     private double duration;
 
     public Flight() {
-
+        flightDate = 5.09.09;
     }
 
     public Flight(int flightId, City fromCity, City toCity, int maxCapacity, Date flightDate, double duration) {
